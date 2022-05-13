@@ -9,8 +9,8 @@ const Footer = () => {
             background: `url(${footer})`,
             backgroundSize: 'cover'
         }} className=" p-10 ">
-            <div>
-                <div className='footer'>
+            <div className='footer'>
+                <div>
                     <span className="footer-title">Services</span>
                     <a className="link link-hover">Branding</a>
                     <a className="link link-hover">Design</a>
@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='my-10 text-center'>
-                <p>Copyright © {year} - All right reserved by ACME Industries Ltd</p>
+                <p>Copyright © {year} - All right reserved</p>
             </div>
         </footer>
     );
