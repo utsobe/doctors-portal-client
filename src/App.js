@@ -9,6 +9,7 @@ import SignUp from './Pages/Login/SignUp';
 import Navbar from './Pages/Shared/Navbar';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 const number = 55555;
 function App() {
@@ -21,6 +22,11 @@ function App() {
         <Route path='appointment' element={
           <RequireAuth>
             <Appointment></Appointment>
+          </RequireAuth>
+        }></Route>
+        <Route path='dashboard' element={
+          <RequireAuth>
+            <Dashboard></Dashboard>
           </RequireAuth>
         }></Route>
         <Route path='login' element={<Login></Login>}></Route>
