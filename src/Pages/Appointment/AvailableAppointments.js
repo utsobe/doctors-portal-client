@@ -9,7 +9,7 @@ const AvailableAppointments = ({ date, setDate }) => {
     const [treatment, setTreatment] = useState(null);
 
     const formattedDate = format(date, 'PP');
-    const { data: services, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`http://localhost:5000/available?date=${formattedDate}`)
+    const { data: services, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`https://dry-thicket-05280.herokuapp.com/available?date=${formattedDate}`)
         .then(res => res.json())
     )
 
