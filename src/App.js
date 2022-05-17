@@ -16,6 +16,7 @@ import MyHistory from './Pages/Dashboard/MyHistory';
 import Users from './Pages/Dashboard/Users';
 import AddDoctor from './Pages/Dashboard/AddDoctor';
 import RequireAdmin from './Pages/Login/RequireAdmin';
+import ManageDoctors from './Pages/Dashboard/ManageDoctors';
 
 const number = 55555;
 function App() {
@@ -46,6 +47,11 @@ function App() {
           <Route path='addDoctor' element={
             <RequireAdmin>
               <AddDoctor></AddDoctor>
+            </RequireAdmin>
+          }></Route>
+          <Route path='manageDoctor' element={
+            <RequireAdmin>
+              <ManageDoctors></ManageDoctors>
             </RequireAdmin>
           }></Route>
         </Route>
